@@ -1,0 +1,942 @@
+/*************************************************
+**************************************************
+
+Website Name: Cepton
+Website URL: www.cepton.com
+Website Author: Aaron Cheng
+Author URL: chengfolio.com
+Copyright 2018. All Rights Reserved.
+
+Color Guide
+***************
+
+000000 - Black(background color)
+222222 - medium gray
+FFF - Gray(Default text)
+
+
+*************************************************/
+
+/************************************************
+*************************************************
+0. CSS Reset -------------------- All Files
+1. Text Styles ---------------------- All Files
+2. Image Styles -------------------- All Files
+3. Shape Styles ---------------------- All Files
+4. Spacing Styles ---------------------- All Files
+5. Button Styles ---------------------- All Files
+6. Nav/Footer Styles ---------------------- All Files
+7. Page Style - Home ---------------------- All Files
+8. Page Style - Products ---------------------- All Files
+9. Page Style - Events ---------------------- All Files
+10. Page Style - News ---------------------- All Files
+
+*************************************************
+************************************************/
+
+/*----------------------------------------------
+------------------------------------------------
+0. CSS Reset
+------------------------------------------------
+----------------------------------------------*/
+body  {
+  font-family: "Open Sans", Microsoft YaHei, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #fff;
+  background-color: #000;
+}
+
+p {
+  margin: 0;
+}
+
+ul,ol,li{
+	list-style-type: none;
+	padding:0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: "Open Sans", Microsoft YaHei, Helvetica, Arial, sans-serif;
+	font-weight:500;
+	font-size: 18px;
+	margin: 0;
+}
+
+a{
+	color: #fff;
+}
+
+a:hover, a:focus{
+	color: #fff;
+	opacity: 0.9;
+	text-decoration: none;
+}
+
+q{
+	font-style: italic;
+}
+
+.container-fluid{
+	padding: 0;
+}
+
+/*----------------------------------------------
+------------------------------------------------
+1. Text Styles
+------------------------------------------------
+----------------------------------------------*/
+.txt--highlight{
+	color: #fff;
+}
+
+.txt--secondary{
+	opacity: 0.5;
+}
+
+.txt--regular{
+	font-weight: 400;
+}
+
+.txt--bold{
+	font-weight: 700;
+}
+
+.txt--description{
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.txt--bullet_list{
+	list-style-type: disc;
+	list-style-position:outside;
+}
+
+.txt--bullet_list > li{
+	list-style-type: disc;
+	list-style-position:outside;
+}
+
+.txt--xxl{
+	font-size: 32px;
+	line-height: 48px;
+}
+
+.txt--xl{
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.txt--lg{
+	font-size: 18px;
+	line-height: 36px;
+}
+
+.txt--md{
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+.txt--sm{
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.txt--title{
+	font-size: 32px;
+	line-height: 48px;
+	font-weight: 700;
+	color: #FFF;
+}
+
+.txt--subtitle{
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 400;
+	color: #3E3E3E;
+}
+
+
+q {
+    font-style: italic;
+    
+}
+
+
+
+/*----------------------------------------------
+------------------------------------------------
+2. Image Styles
+------------------------------------------------
+----------------------------------------------*/
+.img--full_width{
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img_hero{
+	height: 476px;
+	background: url(../img/img_hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #FFF;
+}
+
+.img_map{
+	height: 476px;
+	background: url(../img/img_map.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #FFF;
+}
+
+.img_background{
+	position: absolute;
+	width: 100%;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    top: 0;
+	bottom: 0;
+	background: url(../img/img_background.jpg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+/*----------------------------------------------
+------------------------------------------------
+3. Shape Styles
+------------------------------------------------
+----------------------------------------------*/
+.flex-container{
+  display: flex !important;
+
+}
+
+.flex--verticalAlign{
+	flex-direction: column;
+	align-items: center;
+}
+
+.flex--column{
+	flex-direction: column;
+}
+
+.box{
+	display: block;
+}
+
+.box--primary{
+	background-color: #000;
+}
+
+.box--secondary{
+	background-color: #F6F6F6;
+}
+
+.box--under_hero{
+	position: relative;
+	top: -60px;
+	margin-bottom: -40px;
+}
+
+.box--full_width{
+	width: 100%;
+}
+
+.box--center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box-backgroundImg{
+	background-position: center;
+	background-size: cover;
+}
+
+.background--differentiator{
+	background-color: #222222;
+}
+/*----------------------------------------------
+------------------------------------------------
+4. Spacing Styles
+------------------------------------------------
+----------------------------------------------*/
+.margin--section_top{
+	margin-top: 100px;
+}
+
+.margin--section_bottom{
+	margin-bottom: 100px;
+}
+
+.margin--element_top_xl{
+	margin-top: 120px;
+}
+
+.margin--element_top_lg{
+	margin-top: 100px;
+}
+
+.margin--element_top{
+	margin-top: 70px;
+}
+
+.margin--element_top_sm{
+	margin-top: 40px;
+}
+
+.margin--element_top_xs{
+	margin-top: 24px;
+}
+
+.margin--element_top_xxs{
+	margin-top: 10px;
+}
+
+.margin--element_bottom{
+	margin-bottom: 70px;
+}
+
+.margin--element_bottom_sm{
+	margin-bottom: 40px;
+}
+
+.margin--element_bottom_xs{
+	margin-bottom: 20px;
+}
+
+.margin--element_left{
+	margin-left: 70px;
+}
+
+.padding--section{
+	padding-top:56px;
+	padding-bottom: 56px;
+}
+
+.padding--element_lg{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.padding--element_top_lg{
+	padding-top: 120px;	
+}
+
+
+.padding--element_top_md{
+	padding-top: 80px;
+}
+
+
+.padding--element_bottom_lg{
+	padding-bottom: 120px;
+}
+
+.padding--element_md{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.padding--element_sm{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.padding--element_xs{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*----------------------------------------------
+------------------------------------------------
+5. Button Styles
+------------------------------------------------
+----------------------------------------------*/
+.btn{
+	border-width: 0;
+	display: block;
+	font-weight: 400;
+	text-align: center;
+	cursor: pointer;
+}
+
+.btn--primary{
+	width: 100%;
+	color: #fff;
+	background-color: #3E3E3E;
+	height: 30px;
+	line-height: 30px;
+}
+
+.btn--highlight{
+	background-color: #63AB46;
+	color:#fff;
+/*	height: 40px;*/
+	line-height: 40px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+
+}
+
+.btn--secondary{
+	border-color: #fff;
+	border-style: solid;
+	border-width: 1px;
+	color:#fff;
+	line-height: 40px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	font-size: 14px;
+
+}
+
+.btn:hover, .btn:focus{
+	color:#fff;
+	opacity: 0.9;
+}
+
+.btn--lg{
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+}
+
+.btn__menu_expand{
+	margin-top: 12px;
+}
+
+/*----------------------------------------------
+------------------------------------------------
+6. Nav/Footer Styles
+------------------------------------------------
+----------------------------------------------*/
+.main_nav {
+	background-color: #55555580;
+	height: 48px;
+	position:fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+.nav__logo a img{
+	margin-top: 8px;
+	height: 32px;
+}
+
+.menu{
+	justify-content: space-around;
+}
+
+.menu > li > a, .menu > li > p{
+	line-height: 48px;
+	color: #FFF;
+}
+
+.menu__products__dropdown, .menu__media__dropdown{
+	background-color: #55555580;
+	padding:0 32px 16px 16px;
+	margin-left: -16px;
+	visibility: hidden;
+	position: absolute;
+	top: 48px;
+}
+
+.menu__media__dropdown{
+	padding-right: 16px;
+}
+
+.menu__products__dropdown li, .menu__media__dropdown li{
+	margin-top: 8px;
+}
+
+.menu__products:hover + .menu__products__dropdown {
+	visibility: visible;
+}
+
+.menu__products__dropdown:hover{
+	visibility: visible;
+}
+
+.menu__media:hover + .menu__media__dropdown {
+	visibility: visible;
+}
+
+.menu__media__dropdown:hover{
+	visibility: visible;
+}
+
+.btn--nav__menu, .btn--nav__btn--close{
+	margin-top: 8px;
+	float: right;
+}
+
+.btn--nav__btn--close{
+	display: none;
+}
+
+.nav--mobile{
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #000;
+	z-index: 99;
+	padding: 64px 32px 0 32px;
+	font-size: 16px;
+	line-height: 32px;
+	display: none;
+}
+
+.btn--nav--mobile{
+	cursor: pointer;
+	font-weight: 400;
+}
+
+.nav--mobile > li{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #555;
+}
+
+.menu__products--mobile li, .menu__media--mobile li{
+	margin-left: 32px;
+}
+
+.footer__copyright{
+	font-size: 14px;
+	font-weight: 400;
+	margin: 24px;
+}
+
+.footer__menu--margin_left{
+	margin-left: 40px;
+}
+
+footer{
+	background-color: #F0F0F0;
+}
+
+/*----------------------------------------------
+------------------------------------------------
+7. Page Style - Home
+------------------------------------------------
+----------------------------------------------*/
+.icon_logo{
+	margin-top: 18px;
+}
+
+.home__video{
+	height: 600px;
+}
+
+.home__video__title{
+	position: absolute;
+	bottom: 32px;
+	width: 100%;
+	text-align: center;
+}
+
+.home__getStarted{
+	background-color: #FFEE00;
+}
+
+.home__about{
+	background-image: url("../img/home/home__about__background.jpg");
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.home__heroImg__text{
+	font-weight: 700;
+	font-size: 20px;
+	color: #000;
+	line-height: 32px;
+}
+
+.home__getStarted__text{
+	font-weight: 700;
+	font-size: 20px;
+	color: #000;
+	line-height: 32px;
+}
+
+.home__products__btn{
+	width: 104px;
+}
+
+.home__products--container{
+	flex-direction: column;
+	align-items: center;
+}
+
+.home__industries{
+	flex-wrap: wrap;
+	position: relative;
+	cursor: pointer;
+}
+
+.home__industries__subtitle{
+	position: absolute;
+	left:48px;
+	bottom: 48px;
+	right: 48px;
+}
+
+.home__industries__mask{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #000000cc;
+	display: none;
+}
+
+.home__industries__description{
+	display: none;
+}
+
+.home__industries__industry{
+	flex-basis: 50%;
+	position: relative;
+}
+
+.home__industries__industry:hover .home__industries__description{
+	display: block;
+}
+
+.home__industries__btn{
+	width: 104px;
+}
+
+.home__industries__industry:hover .home__industries__mask{
+	display: block;
+}
+
+.home__industries__mobile{
+	position: fixed;
+	left:0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	background-color: #000000cc;
+	z-index: 999;
+	display: none;
+	padding: 48px; 
+	overflow: scroll;
+}
+
+.home__industries__mobile h3{
+	margin-top: 48px;
+}
+
+.footer__contact__container{
+	background-color: #222;
+}
+
+.footer__contact{
+	justify-content: center;
+}
+
+.footer__contact a{
+	margin: 16px;
+}
+
+/*----------------------------------------------
+------------------------------------------------
+8. Page Style - Products
+------------------------------------------------
+----------------------------------------------*/
+.products__hr80__heroContainer{
+	background-image: url("../img/products/hr80-hero@2x.jpg");
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.products__sora__heroContainer{
+	background-image: url("../img/products/sora-hero@2x.jpg");
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.products__vista__heroContainer{
+	background-image: url("../img/products/vista-hero@2x.jpg");
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.products__btn--watch{
+	width: 136px;
+}
+
+.products__btn--watch img{
+	height: 16px;
+	width: 16px;
+	margin:12px;
+}
+
+.products__hr80__productImg{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto
+}
+
+.products__video{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #000000cc;
+	padding-top: 96px;
+	z-index: 9999;
+	display: none;
+}
+
+.products__video__container{
+	width: 770px;
+	height: 500px;
+	align-items: flex-end;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.products__video iframe{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*----------------------------------------------
+------------------------------------------------
+9. Page Style - Events
+------------------------------------------------
+----------------------------------------------*/
+.events__heroContainer{
+	background-image: url("../img/events/events-hero@2x.png");
+	width: 100%;
+	height: 392px;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.events__btn--pastEvents{
+	width: 158px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.events__pastEvent{
+	display: none;
+}
+
+.events__btn--pastEvents--hide{
+	display: none;
+}
+
+/*----------------------------------------------
+------------------------------------------------
+10. Page Style - News
+------------------------------------------------
+----------------------------------------------*/
+.news__featured__main{
+	height: 392px;
+	margin-right: 8px;
+	margin-top: 8px;
+	padding: 8px;
+	flex-basis: 60%;
+	align-content: flex-end;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+.news__featured__secondary__container{
+	flex-basis: 40%;
+	flex-direction:column;
+	flex-wrap: wrap;
+}
+
+.news__featured__secondary{
+	height: 192px;
+	margin-top: 8px;
+	align-content: flex-end;
+	flex-wrap: wrap;
+	padding: 8px;
+	background-blend-mode: multiply;
+}
+
+.news__featured__txt{
+/*	background-image: linear-gradient(#000, #fff);
+	padding: 8px;
+	background-blend-mode: multiply;*/
+}
+
+
+
+
+.newsContainer{
+/*	background-image: url("../img/events/events-hero@2x.png");*/
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.meta{
+display:none;
+}
+
+@media (max-width: 576px) { 
+	.home__video{
+		height: auto;
+		margin-top: 48px;
+	}
+	.txt--xxl{
+		font-size: 24px;
+	}
+	.padding--side--sm{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.padding--section{
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+	.margin--element_top_xs{
+		margin-top: 16px;
+	}
+	.home__industries__industry{
+		flex-basis: 100%;
+		position: relative;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	.home__video, .home__video--lamp{
+		height: 320px;
+		object-fit: cover;
+	}
+	.home__industries__mobile{
+		padding: 15px; 
+	}
+	.home__industries__mobile h3{
+		margin-top: 32px;
+	}
+	.events__heroContainer{
+		height: 240px;
+	}
+	.news__featured__container{
+		flex-flow: wrap;
+	}
+	.news__featured__main{
+		height: 192px;
+		flex-basis: 100%;
+		width: 100%;
+	}
+
+	.news__featured__secondary__container{
+		flex-basis: 100%;
+		width: 100%;
+	}
+}
+
+@media (max-width: 769px) {
+	.img_hero{
+		height: 200px;
+		background-size:cover;
+	}
+
+	.products__video{
+		padding: 0;
+	}
+
+	.products__video__container{
+		width: 100%;
+		height: 100%;
+	}
+
+	.btn--video-close{
+		margin-top: 15px;
+		margin-right: 15px;
+	}
+
+	.txt--title{
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.btn--contact--highlight{
+		font-size: 10px;
+		padding: 0;
+	}
+
+	.margin--element_top{
+		margin-top: 20px;
+	}
+
+	.padding--element_lg{
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.padding--element_top_lg{
+		padding-top: 80px;	
+	}
+
+	.padding--element_bottom_lg{
+		padding-bottom: 80px;
+	}
+
+	.margin--element_top_lg{
+		margin-top: 80px;
+	}
+
+	.main_nav__txt{
+		margin: 10px 20px auto 40px;
+	}
+
+	.btn__menu_expand{
+		margin-top: 6px;
+	}
+}
+
+@media (max-width: 992px) { 
+	.home__heroImg__text{
+		margin-top: 120px;
+	}
+}
+
+@media (min-width: 767px) { 
+
+}
